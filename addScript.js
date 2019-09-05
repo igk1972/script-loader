@@ -3,6 +3,10 @@
 	Author Tobias Koppers @sokra
 */
 module.exports = function(src, useStrict) {
+
+	// Check for NodeJS
+  if (typeof window === 'undefined') return
+
 	function log(error) {
 		(typeof console !== "undefined")
 		&& (console.error || console.log)("[Script Loader]", error);

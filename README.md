@@ -21,7 +21,7 @@ npm install --save-dev script-loader
 
 Executes JS script once in global context.
 
-> :warning: Doesn't work in NodeJS
+> :warning: Doesn't execute in NodeJS, only load.
 
 ### Config (recommended)
 
